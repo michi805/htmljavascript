@@ -1,0 +1,99 @@
+# 운영체제 관련 파일
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# 에디터 및 IDE 관련 파일
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (WebStorm, IntelliJ 등)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Atom
+.atom/
+
+# 로그 파일
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# 임시 파일
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# 환경 변수 파일
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 의존성 디렉토리 (나중에 npm 등을 사용할 경우)
+node_modules/
+package-lock.json
+yarn.lock
+
+# 빌드 결과물 (나중에 빌드 도구를 사용할 경우)
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# 캐시 파일
+.cache/
+.parcel-cache/
+.npm/
+.eslintcache
+
+# 테스트 커버리지
+coverage/
+.nyc_output/
+
+# 기타
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
