@@ -3,171 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>김민수 - 자기소개서</title>
+    <title>김민수 | 소프트웨어 개발자</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 네비게이션 바 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">김민수</div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">홈</a></li>
-                <li><a href="#about" class="nav-link">소개</a></li>
-                <li><a href="#strengths" class="nav-link">장단점</a></li>
-                <li><a href="#philosophy" class="nav-link">생활신조</a></li>
-                <li><a href="#experience" class="nav-link">경험</a></li>
-                <li><a href="#vision" class="nav-link">포부</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- 사이드 네비게이션 -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="logo">
+                <a href="#home">KM</a>
             </div>
+            <nav class="sidebar-nav">
+                <a href="#about" class="nav-item" data-section="about">
+                    <span class="nav-number">01.</span>
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="#experience" class="nav-item" data-section="experience">
+                    <span class="nav-number">02.</span>
+                    <span class="nav-text">Experience</span>
+                </a>
+                <a href="#work" class="nav-item" data-section="work">
+                    <span class="nav-number">03.</span>
+                    <span class="nav-text">Work</span>
+                </a>
+                <a href="#contact" class="nav-item" data-section="contact">
+                    <span class="nav-number">04.</span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </nav>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Email" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 모바일 네비게이션 -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-container">
+            <div class="mobile-logo">KM</div>
+            <button class="mobile-menu-toggle" aria-label="메뉴">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#work" class="mobile-nav-link">Work</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
         </div>
     </nav>
 
-    <!-- 메인 섹션 -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">안녕하세요,<br><span class="highlight">김민수</span>입니다</h1>
-            <p class="hero-subtitle">소프트웨어 개발자로서 사용자에게 가치 있는 서비스를 제공하고 싶습니다</p>
-            <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary">더 알아보기</a>
-                <a href="#vision" class="btn btn-secondary">포부 보기</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-        </div>
-    </section>
-
-    <!-- 지원 동기 및 포부 -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">지원 동기 및 포부</h2>
-            <div class="content-card">
-                <p class="intro-text">
-                    저는 대학에서 컴퓨터공학을 전공하며 프로그래밍의 기초를 다졌고, 졸업 후 2년간 스타트업에서 웹 개발 업무를 담당했습니다. 빠르게 변화하는 IT 업계에서 새로운 기술을 학습하고 적용하는 것에 큰 흥미를 느끼며, 특히 사용자 경험을 개선하는 기술적 솔루션을 찾는 것을 좋아합니다.
+    <!-- 메인 컨텐츠 -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="hero-greeting">안녕하세요, 제 이름은</p>
+                <h1 class="hero-name">김민수입니다.</h1>
+                <h2 class="hero-title">사용자에게 가치를 제공하는<br>소프트웨어 개발자입니다.</h2>
+                <p class="hero-description">
+                    저는 대학에서 컴퓨터공학을 전공하며 프로그래밍의 기초를 다졌고, 
+                    졸업 후 2년간 스타트업에서 웹 개발 업무를 담당했습니다. 
+                    빠르게 변화하는 IT 업계에서 새로운 기술을 학습하고 적용하는 것에 큰 흥미를 느끼며, 
+                    특히 사용자 경험을 개선하는 기술적 솔루션을 찾는 것을 좋아합니다.
                 </p>
-                <p class="intro-text">
-                    귀사는 혁신적인 기술력과 우수한 개발 문화로 업계에서 인정받고 있으며, 이러한 환경에서 저의 기술적 역량을 더욱 발전시키고 의미 있는 프로젝트에 기여하고 싶습니다.
-                </p>
+                <a href="#contact" class="cta-button">연락하기</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 성격의 장단점 -->
-    <section id="strengths" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">성격의 장단점</h2>
-            <div class="strengths-grid">
-                <div class="strength-card">
-                    <div class="card-icon">💪</div>
-                    <h3>장점</h3>
-                    <ul class="strength-list">
-                        <li>
-                            <strong>꾸준한 학습 의지</strong>
-                            <p>새로운 기술 트렌드에 관심이 많아 개인 시간을 활용해 온라인 강의를 수강하고 사이드 프로젝트를 진행합니다.</p>
-                        </li>
-                        <li>
-                            <strong>협업과 소통</strong>
-                            <p>팀 프로젝트에서 다른 개발자, 디자이너, 기획자와 원활히 소통하며 공동의 목표를 달성하는 것을 중요하게 생각합니다.</p>
-                        </li>
-                        <li>
-                            <strong>문제 해결 지향적</strong>
-                            <p>복잡한 버그나 기술적 이슈에 직면했을 때 포기하지 않고 다양한 접근 방법을 시도하여 해결책을 찾습니다.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="strength-card">
-                    <div class="card-icon">🎯</div>
-                    <h3>단점 & 개선 노력</h3>
-                    <ul class="strength-list">
-                        <li>
-                            <strong>완벽주의 성향</strong>
-                            <p>때로는 코드의 완성도에 지나치게 집착하여 일정에 영향을 줄 수 있습니다. 이를 개선하기 위해 우선순위를 명확히 하고 적정 수준의 완성도를 목표로 하는 연습을 하고 있습니다.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 생활신조 -->
-    <section id="philosophy" class="section philosophy-section">
-        <div class="container">
-            <div class="philosophy-content">
-                <h2 class="section-title">생활신조</h2>
-                <div class="philosophy-quote">
-                    <blockquote>"기술은 사람을 위해 존재한다"</blockquote>
-                </div>
-                <p class="philosophy-text">
-                    개발자로서 항상 사용자의 관점에서 생각하려 노력합니다. 아무리 기술적으로 뛰어난 코드라도 실제 사용자에게 도움이 되지 않는다면 의미가 없다고 생각합니다. 사용자가 더 편리하고 효율적으로 업무를 처리할 수 있도록 돕는 것이 개발자의 사명이라고 믿습니다.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 학창시절 경험 및 특이사항 -->
-    <section id="experience" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">학창시절 경험 및 특이사항</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>해커톤 우수상 수상</h3>
-                        <p class="timeline-date">대학교 3학년</p>
-                        <p>교내 해커톤에서 "지역 상권 활성화 앱"을 개발하여 우수상을 수상했습니다. 이 프로젝트에서 팀장을 맡아 5명의 팀원과 함께 48시간 동안 React Native로 모바일 앱을 완성했습니다.</p>
-                        <p>특히 백엔드 API 설계부터 프론트엔드 구현까지 전 과정에 참여하면서 풀스택 개발 경험을 쌓을 수 있었고, 짧은 시간 내에 팀원들의 역량을 파악하고 업무를 효율적으로 분배하는 리더십을 발휘했습니다.</p>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-heading">
+                    <span class="section-number">01.</span>
+                    <span class="section-title">About Me</span>
+                    <span class="section-line"></span>
+                </h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            안녕하세요. 소프트웨어 개발자로서 사용자에게 가치 있는 서비스를 제공하고 싶은 김민수입니다.
+                        </p>
+                        <p>
+                            저는 대학에서 컴퓨터공학을 전공하며 프로그래밍의 기초를 다졌고, 졸업 후 2년간 스타트업에서 웹 개발 업무를 담당했습니다. 
+                            빠르게 변화하는 IT 업계에서 새로운 기술을 학습하고 적용하는 것에 큰 흥미를 느끼며, 
+                            특히 사용자 경험을 개선하는 기술적 솔루션을 찾는 것을 좋아합니다.
+                        </p>
+                        <p>
+                            귀사는 혁신적인 기술력과 우수한 개발 문화로 업계에서 인정받고 있으며, 
+                            이러한 환경에서 저의 기술적 역량을 더욱 발전시키고 의미 있는 프로젝트에 기여하고 싶습니다.
+                        </p>
+                        <p>주로 사용하는 기술 스택:</p>
+                        <ul class="tech-list">
+                            <li>JavaScript (ES6+)</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>HTML & CSS</li>
+                            <li>Git</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>학회 멘토링 활동</h3>
-                        <p class="timeline-date">대학교 4년간</p>
-                        <p>컴퓨터공학과 학회에서 활동하며 후배들에게 프로그래밍을 가르치는 멘토링을 진행했습니다. 복잡한 개념을 쉽게 설명하는 능력을 기를 수 있었고, 이는 현재 팀 내에서 코드 리뷰와 기술 공유를 할 때 큰 도움이 되고 있습니다.</p>
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <div class="image-placeholder"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 입사 후 포부 -->
-    <section id="vision" class="section">
-        <div class="container">
-            <h2 class="section-title">입사 후 포부</h2>
-            <div class="vision-grid">
-                <div class="vision-card">
-                    <div class="vision-number">01</div>
-                    <h3>단기 목표</h3>
-                    <p>입사 후에는 먼저 귀사의 개발 문화와 코딩 컨벤션에 빠르게 적응하여 팀의 일원으로서 역할을 다하겠습니다. 맡은 업무를 성실히 수행하면서 귀사의 비즈니스 도메인에 대한 이해도를 높이고, 기존 팀원들과의 협업을 통해 개발 실력을 향상시키겠습니다.</p>
-                </div>
-                <div class="vision-card">
-                    <div class="vision-number">02</div>
-                    <h3>중장기 목표</h3>
-                    <p>기술 리더로 성장하여 주니어 개발자들을 멘토링하고, 새로운 기술 도입과 개발 프로세스 개선에 기여하고 싶습니다. 특히 클라우드 기술과 마이크로서비스 아키텍처에 대한 전문성을 쌓아 서비스의 확장성과 안정성 향상에 기여하겠습니다.</p>
-                </div>
-                <div class="vision-card">
-                    <div class="vision-number">03</div>
-                    <h3>궁극적 목표</h3>
-                    <p>귀사와 함께 성장하여 IT 업계에서 인정받는 개발자가 되고, 사용자에게 진정한 가치를 제공하는 혁신적인 서비스 개발에 핵심적인 역할을 담당하고 싶습니다.</p>
+        <!-- Strengths Section -->
+        <section id="strengths" class="section section-alt">
+            <div class="section-container">
+                <h2 class="section-heading">
+                    <span class="section-number">02.</span>
+                    <span class="section-title">Strengths & Growth</span>
+                    <span class="section-line"></span>
+                </h2>
+                <div class="strengths-grid">
+                    <div class="strength-card">
+                        <div class="card-header">
+                            <div class="card-icon">💪</div>
+                            <h3>장점</h3>
+                        </div>
+                        <ul class="strength-items">
+                            <li>
+                                <strong>꾸준한 학습 의지</strong>
+                                <p>새로운 기술 트렌드에 관심이 많아 개인 시간을 활용해 온라인 강의를 수강하고 사이드 프로젝트를 진행합니다.</p>
+                            </li>
+                            <li>
+                                <strong>협업과 소통</strong>
+                                <p>팀 프로젝트에서 다른 개발자, 디자이너, 기획자와 원활히 소통하며 공동의 목표를 달성하는 것을 중요하게 생각합니다.</p>
+                            </li>
+                            <li>
+                                <strong>문제 해결 지향적</strong>
+                                <p>복잡한 버그나 기술적 이슈에 직면했을 때 포기하지 않고 다양한 접근 방법을 시도하여 해결책을 찾습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="strength-card">
+                        <div class="card-header">
+                            <div class="card-icon">🎯</div>
+                            <h3>개선 노력</h3>
+                        </div>
+                        <ul class="strength-items">
+                            <li>
+                                <strong>완벽주의 성향</strong>
+                                <p>때로는 코드의 완성도에 지나치게 집착하여 일정에 영향을 줄 수 있습니다. 이를 개선하기 위해 우선순위를 명확히 하고 적정 수준의 완성도를 목표로 하는 연습을 하고 있습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 푸터 -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 김민수. All rights reserved.</p>
-            <p class="footer-text">소프트웨어 개발자로서 사용자에게 가치 있는 서비스를 제공하고 싶습니다.</p>
-        </div>
-    </footer>
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-container">
+                <h2 class="section-heading">
+                    <span class="section-number">03.</span>
+                    <span class="section-title">Where I've Worked</span>
+                    <span class="section-line"></span>
+                </h2>
+                <div class="experience-content">
+                    <div class="experience-tabs">
+                        <button class="tab-button active" data-tab="hackathon">해커톤</button>
+                        <button class="tab-button" data-tab="mentoring">멘토링</button>
+                    </div>
+                    <div class="experience-panels">
+                        <div class="tab-panel active" id="hackathon">
+                            <h3 class="job-title">팀장 <span class="company">@ 교내 해커톤</span></h3>
+                            <p class="job-period">대학교 3학년</p>
+                            <ul class="job-description">
+                                <li>교내 해커톤에서 "지역 상권 활성화 앱"을 개발하여 우수상을 수상했습니다.</li>
+                                <li>팀장을 맡아 5명의 팀원과 함께 48시간 동안 React Native로 모바일 앱을 완성했습니다.</li>
+                                <li>백엔드 API 설계부터 프론트엔드 구현까지 전 과정에 참여하면서 풀스택 개발 경험을 쌓을 수 있었습니다.</li>
+                                <li>짧은 시간 내에 팀원들의 역량을 파악하고 업무를 효율적으로 분배하는 리더십을 발휘했습니다.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="mentoring">
+                            <h3 class="job-title">멘토 <span class="company">@ 컴퓨터공학과 학회</span></h3>
+                            <p class="job-period">대학교 4년간</p>
+                            <ul class="job-description">
+                                <li>컴퓨터공학과 학회에서 활동하며 후배들에게 프로그래밍을 가르치는 멘토링을 진행했습니다.</li>
+                                <li>복잡한 개념을 쉽게 설명하는 능력을 기를 수 있었고, 이는 현재 팀 내에서 코드 리뷰와 기술 공유를 할 때 큰 도움이 되고 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="section section-alt">
+            <div class="section-container">
+                <h2 class="section-heading">
+                    <span class="section-number">04.</span>
+                    <span class="section-title">Some Things I've Built</span>
+                    <span class="section-line"></span>
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <p class="project-label">Featured Project</p>
+                            <h3 class="project-title">지역 상권 활성화 앱</h3>
+                            <div class="project-description">
+                                <p>React Native로 개발한 모바일 애플리케이션으로, 지역 상권 활성화를 위한 플랫폼입니다. 
+                                백엔드 API 설계부터 프론트엔드 구현까지 전 과정을 담당하여 풀스택 개발 경험을 쌓았습니다.</p>
+                            </div>
+                            <ul class="project-tech">
+                                <li>React Native</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>REST API</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="External Link">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="section">
+            <div class="section-container">
+                <h2 class="section-heading">
+                    <span class="section-number">05.</span>
+                    <span class="section-title">My Philosophy</span>
+                    <span class="section-line"></span>
+                </h2>
+                <div class="philosophy-content">
+                    <blockquote class="philosophy-quote">
+                        "기술은 사람을 위해 존재한다"
+                    </blockquote>
+                    <p class="philosophy-text">
+                        개발자로서 항상 사용자의 관점에서 생각하려 노력합니다. 
+                        아무리 기술적으로 뛰어난 코드라도 실제 사용자에게 도움이 되지 않는다면 의미가 없다고 생각합니다. 
+                        사용자가 더 편리하고 효율적으로 업무를 처리할 수 있도록 돕는 것이 개발자의 사명이라고 믿습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section id="vision" class="section section-alt">
+            <div class="section-container">
+                <h2 class="section-heading">
+                    <span class="section-number">06.</span>
+                    <span class="section-title">What's Next?</span>
+                    <span class="section-line"></span>
+                </h2>
+                <div class="vision-content">
+                    <h3 class="vision-title">입사 후 포부</h3>
+                    <div class="vision-grid">
+                        <div class="vision-item">
+                            <h4>단기 목표</h4>
+                            <p>입사 후에는 먼저 귀사의 개발 문화와 코딩 컨벤션에 빠르게 적응하여 팀의 일원으로서 역할을 다하겠습니다. 
+                            맡은 업무를 성실히 수행하면서 귀사의 비즈니스 도메인에 대한 이해도를 높이고, 
+                            기존 팀원들과의 협업을 통해 개발 실력을 향상시키겠습니다.</p>
+                        </div>
+                        <div class="vision-item">
+                            <h4>중장기 목표</h4>
+                            <p>기술 리더로 성장하여 주니어 개발자들을 멘토링하고, 새로운 기술 도입과 개발 프로세스 개선에 기여하고 싶습니다. 
+                            특히 클라우드 기술과 마이크로서비스 아키텍처에 대한 전문성을 쌓아 
+                            서비스의 확장성과 안정성 향상에 기여하겠습니다.</p>
+                        </div>
+                        <div class="vision-item">
+                            <h4>궁극적 목표</h4>
+                            <p>귀사와 함께 성장하여 IT 업계에서 인정받는 개발자가 되고, 
+                            사용자에게 진정한 가치를 제공하는 혁신적인 서비스 개발에 핵심적인 역할을 담당하고 싶습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-container">
+                <h2 class="section-heading">
+                    <span class="section-number">07.</span>
+                    <span class="section-title">Get In Touch</span>
+                    <span class="section-line"></span>
+                </h2>
+                <div class="contact-content">
+                    <p class="contact-text">
+                        현재 새로운 기회를 찾고 있습니다. 제 포트폴리오에 관심이 있으시거나 
+                        함께 일하고 싶으시다면 언제든지 연락주세요!
+                    </p>
+                    <a href="mailto:contact@example.com" class="cta-button">연락하기</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Designed & Built by 김민수</p>
+                <p class="footer-note">© 2024 All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
 </html>
-
